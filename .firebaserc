@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "evangelion-5eae1": {
+      "hosting": {
+        "firestarter": [
+          "evangelion-5eae1"
+        ]
+      }
+    }
+  }
+}
