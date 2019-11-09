@@ -12,9 +12,10 @@ import { environment } from 'src/environments/environment.prod';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { EmailLoginComponent } from './user/email-login/email-login.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent],
+  declarations: [AppComponent, HomePageComponent, EmailLoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
