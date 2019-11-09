@@ -9,6 +9,7 @@
   <h5>OR</h5>
 
   <app-email-login></app-email-login>
+
   <div *ngIf="afAuth.authState | async as user">
     <p>
       Logged in as <strong>{{ user.email }}</strong>
