@@ -24,11 +24,12 @@
     "@angular/platform-browser-dynamic": "~8.2.3",
     "@angular/router": "~8.2.3",
     "@schuchard/prettier": "^3.1.0",
+    "firebase": ">= 5.5.7 <7",
     "hammerjs": "^2.0.8",
+    "ngx-tweet": "^2.0.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1",
-    "firebase": ">= 5.5.7 <7"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.0",
