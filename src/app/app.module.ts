@@ -13,19 +13,21 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
+import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
 import { NgxTweetModule } from 'ngx-tweet';
 
 @NgModule({
   declarations: [AppComponent, HomePageComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    NgxTweetModule
+    NgxTweetModule,
+    AngularFireAuthGuardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

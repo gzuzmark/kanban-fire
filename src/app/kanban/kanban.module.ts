@@ -6,12 +6,19 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SharedModule } from '../shared/shared.module';
-import { BoardListComponent } from './board-list/board-list.component';
+import { BoardsListComponent } from './board-list/boards-list.component';
 import { BoardComponent } from './board/board.component';
 import { KanbanRoutingModule } from './kanban-routing.module';
+import { BoardDialogComponent } from './dialogs/board-dialog.component';
+import { TaskDialogComponent } from './dialogs/task-dialog.component';
 
 @NgModule({
-  declarations: [BoardListComponent, BoardComponent],
+  declarations: [
+    BoardsListComponent,
+    BoardComponent,
+    BoardDialogComponent,
+    TaskDialogComponent
+  ],
   imports: [
     CommonModule,
     KanbanRoutingModule,
@@ -20,6 +27,7 @@ import { KanbanRoutingModule } from './kanban-routing.module';
     DragDropModule,
     MatButtonToggleModule,
     MatDialogModule
-  ]
+  ],
+  entryComponents: [BoardDialogComponent, TaskDialogComponent]
 })
 export class KanbanModule {}

@@ -10,4 +10,8 @@ export class LoginComponent implements OnInit {
   constructor(public afAuth: AngularFireAuth) {}
 
   ngOnInit() {}
+  logOut() {
+    this.afAuth.auth.signOut();
+    localStorage.removeItem('user');
+  }
 }
